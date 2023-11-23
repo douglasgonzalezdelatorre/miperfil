@@ -1,0 +1,145 @@
+@font-face {
+    font-family: sunshine;
+    src:url("fuente/HelloSunshine.otf");
+}
+@font-face{
+    font-family: rosellinda;
+    src: url("fuente/CatalishHunteraItalic.otf");
+}
+selector{
+    propiedad:valor;
+    propiedad:valor;
+    propiedad:valor;
+    ...
+}
+
+/*
+    palabra suelta -> etiqueta
+    almohadilla -> id
+    punto -> clase
+*/
+p{
+    color:gb(30,30,30);
+}
+h1,h2,h3,h4,h5,h6,p,ul,li{
+    color:rgb(30,30,30);
+    margin:0px;
+    padding:0px;
+}
+header,main,footer{
+    width:800px;
+    margin: auto;
+    background:rgb(240,240,240);
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding: 20px;
+}
+body{
+    background: rgb(200,200,200);
+    font-family: sans-serif;
+}
+#imagenlogo{
+    float: left;
+    margin-right: 20px;
+}
+h1{
+    font-family: sunshine;
+    font-size: 40px;
+    border-bottom: 1px solid black;
+}
+h2{
+    font-family: rosellinda;
+    font-size: 30px;
+}
+nav ul li a{
+    text-decoration: none;
+    color: inherit;
+}
+nav ul{
+    padding: 0px;
+    margin: 0px;
+}
+nav ul li{
+    padding: 5px;
+    margin: 1px;
+    list-style-type: none;
+    float: left;
+    background: black;
+    color: white;
+    text-transform: uppercase;
+    width: 70px;
+    font-size: 10px;
+    text-align: center;
+    transition: all ls;
+}
+.clearfix{
+    clear: both;
+}
+nav ul li:first-child{
+    border-radius: 15px 0px 0px 15px;
+}
+nav ul li:last-child{
+    border-radius: 0px 15px 15px 0px;
+}
+nav ul li:hover{
+    background: white;
+    color: black;
+}
+
+#carousel #contenedorcarrusel .diapositiva img{
+    width: 100%;
+}
+#carousel #contenedorcarrusel .diapositiva img{
+    width: 800px;
+    height: 800px;
+    float: left;
+}
+#contenedorcarrusel{
+    width:800px;
+    height:800px;
+    overflow:hidden;
+}
+#mascara{
+    width: 4200px;
+    height: 800px;
+    animation: mueve 15s;
+    position: relative;
+}
+@keyframes mueve {
+    0%{left: opx;}
+    20%{left: opx;}
+    25%{left: -800px;}
+    45%{left: -800px;}
+    50%{left: -1600px;}
+    70%{left: -1600px;}
+    75%{left: -2400px;}
+    90%{left: -2400px;}
+    100%{left: -3200px;}
+}
+/* ////// Aqui voy a Terminar con el Carrusel //////*/
+
+/* ////// Aqui voy a Empezar el Blog //////*/
+#blog article{
+    width: 25%;
+    float: left;
+}
+#blog article img{
+    width: 100%;
+}
+#blog article .contienearticulo{
+    padding: 10px;
+}
+/* ////// Aqui voy a Terminar Blog //////*/
+
+/* ////// Aqui voy a Empezar Destacado //////*/
+#highlights article{
+    width: 50%;
+    float: left;
+}
+#highlights article img{
+    width: 100%;
+}
+#highlights article .contienearticulo{
+    padding: 10px;
+}
+/* ////// Aqui voy a Terminar Destacado //////*/
